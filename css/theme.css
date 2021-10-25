@@ -7,6 +7,7 @@
 	--white: #fff;
 	--milk: #f8f9fa;
 	--gray: gray;
+	--darkgray:rgb(48, 48, 48);
 	--lightgray: rgb(211, 211, 211);
 	--turquoise: #46ddb0;
 	--blue: #00a3e1;
@@ -320,6 +321,22 @@ h3 {
 	font-size: 16px !important;
 }
 
+.text-md{
+	font-size: 24px !important;
+}
+
+.text-lg{
+	font-size: 28px !important;
+}
+
+.text-xl{
+	font-size: 36px !important;
+}
+
+.text-xxl {
+	font-size: 48px !important;
+}
+
 .text-bold {
 	font-weight: 500;
 }
@@ -348,6 +365,13 @@ h3 {
 	background-color: var(--black) !important;
 }
 
+.bg-darkgray{
+	background-color: var(--darkgray) !important;
+}
+
+.bg-turquoise {
+	background-color: var(--turquoise) !important;
+}
 
 .b-cover {
 	background-size: cover;
@@ -383,7 +407,7 @@ h3 {
 }
 
 .bradius {
-	border-radius: 30px !important;
+	border-radius: 5px !important;
 }
 
 .border-top {
@@ -391,16 +415,16 @@ h3 {
 }
 
 .border-bottom {
-	border-bottom: 2px solid var(--blue);
+	border-bottom: 2px solid;
 }
 
-.font-normal {
-	font-size: 20px;
+.border-top {
+	border-top: 2px solid;
 }
 
 .btn {
 	border-radius: 0;
-	border: 2px solid;
+	border: 1px solid;
 }
 
 .btn-transparent:hover {
@@ -445,13 +469,20 @@ h3 {
 }
 
 
-/* .carousel-indicators li {
-	background-color: var(--gray);
+.navbar-nav .nav-item a:hover,
+.navbar-nav .nav-item a:active {
+	color: var(--white) !important;
+	text-decoration: none !important;
 }
 
-.carousel-indicators .active {
-	background-color: var(--orange);
-} */
+.navbar-nav li a:hover,
+.navbar-nav li a:active,
+.navbar-nav li a:focus {
+	background-color: var(--white) !important;
+	color: var(--turquoise) !important;
+	text-decoration: none !important;
+
+}
 
 .carousel-control.left,
 .carousel-control.right {
@@ -459,24 +490,21 @@ h3 {
 	filter: none !important;
 }
 
-.navbar-nav li a:hover,
-.navbar-nav li a:active {
-	color: var(--white) !important;
-	text-decoration: none !important;
-}
-
 .img-responsive {
 	max-height: 100vh;
 }
 
 .carousel-inner .item .img-responsive{
-	max-height: calc(100vh - 82px);
+	max-height: calc(100vh - 137px);
 	width: 100%;
 }
 
 .form-group .form-control {
 	padding: 20px 10px;
+	
 }
+
+
 
 @media (max-width: 1200px) {
 	.navbar-nav .nav-item {
