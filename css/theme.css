@@ -468,10 +468,11 @@ h3 {
 	padding: 0 50px;
 }
 
-
 .navbar-nav .nav-item a:hover,
-.navbar-nav .nav-item a:active {
-	color: var(--white) !important;
+.navbar-nav .nav-item a:active,
+.navbar-nav .nav-item a:focus {
+	background-color: var(--black) !important;
+	color: var(--lightgray) !important;
 	text-decoration: none !important;
 }
 
@@ -504,8 +505,6 @@ h3 {
 	
 }
 
-
-
 @media (max-width: 1200px) {
 	.navbar-nav .nav-item {
 		padding: 0 20px;
@@ -514,13 +513,40 @@ h3 {
 }
 
 @media (max-width: 540px) {
-	.font-normal,
+	.text-xxl,
+	.text-xl,
+	.text-sm,
+	.text-lg,
+	.text-md,
 	body {
-		font-size: 16px;
+		font-size: 16px !important;
 	}
-	.text {
-		top: 50%;
+
+	.btn-transparent {
+		font-size: 10px !important;
 	}
+
+	.container .row {
+		text-align: center;
+	}
+
+	.navbar-nav .nav-item{
+		display: block !important;
+		text-align: center;
+		padding: 5px 0;
+	}
+
+	.form-group{
+		margin-right: 0 !important;
+	}
+
+	.carousel-caption .py-1, 
+	.carousel-caption .py-2, 
+	.carousel-caption .py-3, 
+	.carousel-caption .py-4 {
+		padding: 5px !important;
+	}
+
 	.px-2,
 	.px-4,
 	.px-3,
@@ -528,6 +554,7 @@ h3 {
 		padding-left: 15px !important;
 		padding-right: 15px !important;
 	}
+
 	.mx-1,
 	.mx-2,
 	.mx-3,
