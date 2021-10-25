@@ -7,62 +7,223 @@
 
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="lib/fontawesome-free/css/all.min.css" />
+		<link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icons.min.css" />
 
 		<link rel="stylesheet" href="css/theme.css" />
 		<title>Components using Bootstrap</title>
 	</head>
 	<body>
-		<div class="row px-0 mx-0">
-			<!-- Login Form -->
-			<div class="col-md-5">
-				<div class="py-2 px-2 text-gray clearfix">
-					<!-- Back arrow -->
-					<i class="fa fa-arrow-left fa-2x pull-left"></i>
-					<!-- Register link -->
-					<span class="font-normal text-exbold pull-right">Register</span>
+		<header>
+			<!--Navigation Bar (Min header)  -->
+			<nav class="navbar navbar-expand-lg py-1 px-4 mb-0 bg-black bradius-none">
+				<div class="navbar-collapse clearfix" id="navbarSupportedContent">
+					<!-- Social Media Links -->
+					<ul class="navbar-nav list-unstyled list-inline">
+						<li class="nav-item active">
+							<a class="nav-link text-muted mr-1" href="#"><i class="fab fa-facebook"></i></a>
+							<a class="nav-link text-muted mr-1" href="#"><i class="fab fa-twitter"></i></a>
+							<a class="nav-link text-muted mr-1" href="#"><i class="fab fa-pinterest"></i></a>
+							<a class="nav-link text-muted mr-1" href="#"><i class="fab fa-google"></i></a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="py-1 text-muted">
+								<i class="fas fa-mobile-alt px-1"></i>
+								<span>(+1) 234 5678 9101</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="py-1 text-muted">
+								<i class="fas fa-euro-sign px-1"></i>
+								<span>Euro |</span>
+							</a>
+							<a href="#" class="py-1 text-muted">
+								<i class="flag-icon flag-icon-gb px-1"></i>
+								<span>English</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<span class="py-1 text-muted">
+								<a class="text-muted" href="#"> Our Stores </a> | <a class="text-muted" href="#"> Help </a> | <a class="text-muted" href="#"> Account</a>
+							</span>
+						</li>
+						<li class="nav-item">
+							<i class="text-muted fas fa-shopping-cart px-1"></i>
+							<i class="text-muted fas fa-search"></i>
+						</li>
+					</ul>
 				</div>
-				<!-- Form -->
-				<form class="py-2 px-4 mx-2 text-gray">
-					<h2 class="text-black text-exbold">Login</h2>
-					<span class="py-1 d-inlineblock mb-1">Welcome! Please fill username and password to sign in into your account. </span>
-					<!-- Email Input Field -->
-					<div class="form-group">
-						<input type="email" class="form-control text-gray bg-lightgray d-inlineblock bradius-none" id="exampleInputEmail1" placeholder="Type your email" />
-					</div>
+			</nav>
+		</header>
 
-					<!-- Password Input Field -->
-					<div class="form-group">
-						<input type="password" class="form-control text-gray bg-lightgray d-inlineblock bradius-none" id="exampleInputPassword1" placeholder="Type your password" />
-					</div>
+		<!-- Header -->
+		<nav class="navbar bradius-none sticky-top bg-white navbar-light clearfix mb-0 px-4">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header text-center text-uppercase px-4">
+				<h1 class="py-0 mb-0 text-black logo">unify</h1>
+				<small class="text-xs">since 1980</small>
+			</div>
+			<!-- Navigation tabs -->
+			<div class="pull-right">
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active px-1 py-1">
+							<a class="text-black text-uppercase" href="#"> Home <i class="fas fa-angle-down"></i></a>
+						</li>
+						<li class="py-1 px-1">
+							<a class="text-black text-uppercase" href="#">Pages <i class="fas fa-angle-down"></i></a>
+						</li>
+						<li class="py-1 px-1">
+							<a class="text-black text-uppercase" href="#">Categories <i class="fas fa-angle-down"></i></a>
+						</li>
+						<li class="py-1 px-1">
+							<a class="text-black text-uppercase" href="#">Watch <i class="fas fa-angle-down"></i></a>
+						</li>
+						<li class="py-1 px-1">
+							<a class="text-black text-uppercase" href="#">Catalogue <i class="fas fa-angle-down"></i></a>
+						</li>
+						<li class="py-1 px-1">
+							<a class="text-black text-uppercase" href="#">New Arrivals <i class="fas fa-angle-down"></i></a>
+						</li>
+						<li class="py-1 px-1">
+							<a class="text-black text-uppercase" href="#">Main</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-					<!-- Forget your password link -->
-					<div class="clearfix">
-						<a href="#" class="text-danger text-exbold py-1 pull-right text-decoration-none">Forgot your password?</a>
-					</div>
+		<!-- Carousel -->
+		<div id="carousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel" data-slide-to="1"></li>
+				<li data-target="#carousel" data-slide-to="2"></li>
+			</ol>
 
-					<!-- Login Button -->
-					<a type="button" class="btn btn-primary py-1 mb-3 bradius btn-block">Login Now</a>
-
-					<!-- Social links -->
-					<div class="my-2 text-center text-primary border-top">
-						<span class="d-block text-gray text-exbold py-1">You can also login with:</span>
-						<a href="https://www.facebook.com" class="links"><i class="fab fa-2x mr-1 fa-facebook"></i></a>
-						<a href="https://www.gmail.com" class="links"><i class="fab fa-2x mr-1 fa-google"></i></a>
-						<a href="https://www.twitter.com" class="links"><i class="fab fa-2x mr-1 fa-twitter"></i></a>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<!-- Slide item -->
+				<div class="item active">
+					<!-- Slide image -->
+					<img class="img-responsive" src="images/pic1.jpg" alt="Slide Image" />
+					<!-- Slide caption -->
+					<div class="carousel-caption overlay px-4 py-4">
+						<div class="col-md-6 col-md-offset-1 py-4">
+							<div class="text-light text-left mb-4 py-4">
+								<h1 class="site-logo head">Shop with Us</h1>
+								<p class="mb-5 lead">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.
+								</p>
+								<!-- Slide buttons -->
+								<div>
+									<a href="#" class="btn btn-transparent px-4 my-1 btn-lg text-uppercase d-inlineblock">Shop Now</a>
+									<a href="#" class="btn btn-transparent px-4 my-1 btn-lg text-uppercase d-inlineblock">Club Membership</a>
+								</div>
+							</div>
+						</div>
 					</div>
-				</form>
+				</div>
+
+				<!-- Slide 2 -->
+				<div class="item">
+					<!-- Slide image -->
+					<img class="img-responsive" src="images/background.jpg" alt="Slide Image" />
+					<!-- Slide caption -->
+					<div class="carousel-caption overlay px-4 py-4">
+						<div class="col-md-6 col-md-offset-1 py-4">
+							<div class="text-light text-left mb-4 py-4">
+								<h1 class="site-logo head">Shop with Us</h1>
+								<p class="mb-5 lead">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.
+								</p>
+								<!-- Slide buttons -->
+								<div>
+									<a href="#" class="btn btn-transparent px-4 my-1 btn-lg text-uppercase d-inlineblock">Shop Now</a>
+									<a href="#" class="btn btn-transparent px-4 my-1 btn-lg text-uppercase d-inlineblock">Club Membership</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slide 3 -->
+				<div class="item">
+					<!-- Slide image -->
+					<img class="img-responsive" src="images/pic1.jpg" alt="Slide Image" />
+					<!-- Slide caption -->
+					<div class="carousel-caption overlay px-4 py-4">
+						<div class="col-md-6 col-md-offset-1 py-4">
+							<div class="text-light text-left mb-4 py-4">
+								<h1 class="site-logo head">Shop with Us</h1>
+								<p class="mb-5 lead">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.
+								</p>
+								<!-- Slide buttons -->
+								<div>
+									<a href="#" class="btn btn-transparent px-4 my-1 btn-lg text-uppercase d-inlineblock">Shop Now</a>
+									<a href="#" class="btn btn-transparent px-4 my-1 btn-lg text-uppercase d-inlineblock">Club Membership</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
-			<!-- Image -->
-			<div class="col-md-7 mx-0 px-0">
-				<!-- Responsive image -->
-				<img class="img-responsive" width="100%" src="images/bground.jpg" alt="Image here" />
-				<!-- Text overlay -->
-				<div class="overlay">
-					<div class="text mx-0">
-						<h2 class="text-capitalize">- Start your journey now</h2>
-						<span>Start creating your amazing website with us! Login into your account now.</span>
+			<!-- Previous/Next controls -->
+			<a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+				<span class="icon-prev" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+				<span class="icon-next" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+		<!-- Footer -->
+		<div class="container">
+			<div class="row px-1 py-4 mt-4">
+				<!-- About Us -->
+				<div class="col-md-4">
+					<h4 class="site-logo text-uppercase py-1">about us</h4>
+					<p class="text-gray">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.
+					</p>
+				</div>
+				<!-- Quick Links -->
+				<div class="col-md-2">
+					<h4 class="site-logo text-uppercase py-1">Quick Links</h4>
+					<ul class="list-unstyled text-gray text-capitalize">
+						<li class="mb-1">about us</li>
+						<li class="mb-1">services</li>
+						<li class="mb-1">Testimonials</li>
+						<li class="mb-1">contact us</li>
+					</ul>
+				</div>
+				<!-- Follow Us -->
+				<div class="col-md-3">
+					<h4 class="site-logo text-uppercase py-1">Follow us</h4>
+					<i class="fab fa-facebook mr-1 text-gray"></i>
+					<i class="fab fa-twitter mr-1 text-gray"></i>
+					<i class="fab fa-instagram mr-1 text-gray"></i>
+					<i class="fab fa-linkedin mr-1 text-gray"></i>
+				</div>
+				<!-- Featured Product -->
+				<div class="col-md-3">
+					<h4 class="site-logo text-uppercase py-1">featured product</h4>
+					<!-- Product Image -->
+					<div>
+						<img class="image-fluid card-image" src="images/p6.jpg" alt="image here" />
 					</div>
+					<h4 class="mt-1"><strong class="text-capitalize">Leather Brown Shoes</strong></h4>
+					<span class="d-block my-1"><strong>$60.00</strong></span>
+					<div class="btn btn-default text-uppercase"><strong>add to cart</strong></div>
+				</div>
+				<!-- Footer foot -->
+				<div class="align-items-center text-center text-gray">
+					<span class="d-inlineblock mt-4">Copyright ©2021 All rights reserved | This template is made with <i class="fa fa-heart"></i> by Colorlib</span>
 				</div>
 			</div>
 		</div>

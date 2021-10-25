@@ -5,8 +5,9 @@
 	--black: #000;
 	--light: #f3f3f3;
 	--white: #fff;
+	--milk: #f8f9fa;
 	--gray: gray;
-	--lightgray: #eee;
+	--lightgray: rgb(211, 211, 211);
 	--turquoise: #46ddb0;
 	--blue: #00a3e1;
 }
@@ -16,6 +17,10 @@ body {
 	font-size: 16px;
 	margin: 0 auto;
 	letter-spacing: 0.5px;
+}
+
+.logo {
+	letter-spacing: 2px;
 }
 
 .container {
@@ -307,6 +312,14 @@ h3 {
 	color: var(--blue) !important;
 }
 
+.text-xs {
+	font-size: 12px !important;
+}
+
+.text-sm {
+	font-size: 16px !important;
+}
+
 .text-bold {
 	font-weight: 500;
 }
@@ -328,8 +341,13 @@ h3 {
 }
 
 .bg-milk {
-	background-color: #f8f9fa !important;
+	background-color: var(--milk)!important;
 }
+
+.bg-black {
+	background-color: var(--black) !important;
+}
+
 
 .b-cover {
 	background-size: cover;
@@ -385,6 +403,23 @@ h3 {
 	border: 2px solid;
 }
 
+.btn-transparent:hover {
+	background-color: var(--white);
+	color: var(--black);
+}
+
+.btn-transparent {
+	background-color: transparent;
+	border: 1px solid var(--white);
+	color: var(--white);
+}
+
+.sticky-top {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+
 .overlay {
 	background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
 	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
@@ -405,13 +440,49 @@ h3 {
 	transform: translate(-50%, -50%);
 }
 
+.navbar-nav .nav-item {
+	padding: 0 50px;
+}
+
+
+/* .carousel-indicators li {
+	background-color: var(--gray);
+}
+
+.carousel-indicators .active {
+	background-color: var(--orange);
+} */
+
+.carousel-control.left,
+.carousel-control.right {
+	background-image: none !important;
+	filter: none !important;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:active {
+	color: var(--white) !important;
+	text-decoration: none !important;
+}
+
 .img-responsive {
 	max-height: 100vh;
-	position: relative;
+}
+
+.carousel-inner .item .img-responsive{
+	max-height: calc(100vh - 82px);
+	width: 100%;
 }
 
 .form-group .form-control {
 	padding: 20px 10px;
+}
+
+@media (max-width: 1200px) {
+	.navbar-nav .nav-item {
+		padding: 0 20px;
+	}
+	
 }
 
 @media (max-width: 540px) {

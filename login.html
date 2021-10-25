@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="lib/fontawesome-free/css/all.min.css" />
+
+		<link rel="stylesheet" href="css/theme.css" />
+		<title>Components using Bootstrap</title>
+	</head>
+	<body>
+		<div class="row px-0 mx-0">
+			<!-- Login Form -->
+			<div class="col-md-5">
+				<div class="py-2 px-2 text-gray clearfix">
+					<!-- Back arrow -->
+					<i class="fa fa-arrow-left fa-2x pull-left"></i>
+					<!-- Register link -->
+					<span class="font-normal text-exbold pull-right">Register</span>
+				</div>
+				<!-- Form -->
+				<form class="py-2 px-4 mx-2 text-gray">
+					<h2 class="text-black text-exbold">Login</h2>
+					<span class="py-1 d-inlineblock mb-1">Welcome! Please fill username and password to sign in into your account. </span>
+					<!-- Email Input Field -->
+					<div class="form-group">
+						<input type="email" class="form-control text-gray bg-lightgray d-inlineblock bradius-none" id="exampleInputEmail1" placeholder="Type your email" />
+					</div>
+
+					<!-- Password Input Field -->
+					<div class="form-group">
+						<input type="password" class="form-control text-gray bg-lightgray d-inlineblock bradius-none" id="exampleInputPassword1" placeholder="Type your password" />
+					</div>
+
+					<!-- Forget your password link -->
+					<div class="clearfix">
+						<a href="#" class="text-danger text-exbold py-1 pull-right text-decoration-none">Forgot your password?</a>
+					</div>
+
+					<!-- Login Button -->
+					<a type="button" class="btn btn-primary py-1 mb-3 bradius btn-block">Login Now</a>
+
+					<!-- Social links -->
+					<div class="my-2 text-center text-primary border-top">
+						<span class="d-block text-gray text-exbold py-1">You can also login with:</span>
+						<a href="https://www.facebook.com" class="links"><i class="fab fa-2x mr-1 fa-facebook"></i></a>
+						<a href="https://www.gmail.com" class="links"><i class="fab fa-2x mr-1 fa-google"></i></a>
+						<a href="https://www.twitter.com" class="links"><i class="fab fa-2x mr-1 fa-twitter"></i></a>
+					</div>
+				</form>
+			</div>
+
+			<!-- Image -->
+			<div class="col-md-7 mx-0 px-0">
+				<!-- Responsive image -->
+				<img class="img-responsive position-relative" width="100%" src="images/bground.jpg" alt="Image here" />
+				<!-- Text overlay -->
+				<div class="overlay">
+					<div class="text mx-0">
+						<h2 class="text-capitalize">- Start your journey now</h2>
+						<span>Start creating your amazing website with us! Login into your account now.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>
