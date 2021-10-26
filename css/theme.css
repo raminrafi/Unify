@@ -542,9 +542,16 @@ h3 {
 
 	.carousel-caption .py-1, 
 	.carousel-caption .py-2, 
-	.carousel-caption .py-3, 
-	.carousel-caption .py-4 {
+	.carousel-caption .py-3 {
 		padding: 5px !important;
+	}
+
+	.carousel-caption .py-4 {
+		padding: 15px !important;
+	}
+
+	.carousel-indicators {
+		display: none !important;
 	}
 
 	.px-2,
