@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800;900&display=swap");
 
 :root {
 	--orange: #f16821;
@@ -14,7 +14,7 @@
 }
 
 body {
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	margin: 0 auto;
 	letter-spacing: 0.5px;
@@ -338,7 +338,7 @@ h3 {
 }
 
 .text-bold {
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .text-exbold {
@@ -410,6 +410,10 @@ h3 {
 	border-radius: 5px !important;
 }
 
+.bg-none {
+	background: none !important;
+}
+
 .border-top {
 	border-top: 4px solid var(--lightgray);
 }
@@ -471,6 +475,10 @@ h3 {
 	transform: translate(-50%, -50%);
 }
 
+.card-text {
+	left: 25%;
+}
+
 .navbar-nav .nav-item {
 	padding: 0 50px;
 }
@@ -490,6 +498,11 @@ h3 {
 	color: var(--turquoise) !important;
 	text-decoration: none !important;
 
+}
+
+.slick-dots li button:before {
+	font-size: 32px;
+	color:var(--turquoise);
 }
 
 .carousel-control.left,
