@@ -8,7 +8,7 @@
 	--milk: #f8f9fa;
 	--gray: gray;
 	--darkgray:rgb(48, 48, 48);
-	--lightgray: rgb(211, 211, 211);
+	--lightgray: rgb(199, 199, 199);
 	--turquoise: #46ddb0;
 	--blue: #00a3e1;
 }
@@ -21,7 +21,7 @@ body {
 }
 
 .logo {
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 }
 
 .container {
@@ -445,13 +445,20 @@ h3 {
 }
 
 .overlay {
-	background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+	background: rgba(0, 0, 0, 0.4);
 	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 	top: 0;
 	left: 0;
 	right: 0;
+	bottom:0;
 	height: 100%;
 	position: absolute;
+}
+
+.cards-overlay {
+	background:linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+	left: 15px;
+	right: 15px; 
 }
 
 .text {
@@ -550,6 +557,9 @@ h3 {
 		padding: 15px !important;
 	}
 
+	.carousel-caption .text-light{
+		margin-top: -20px;
+	}
 	.carousel-indicators {
 		display: none !important;
 	}
