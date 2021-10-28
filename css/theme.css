@@ -7,7 +7,7 @@
 	--white: #fff;
 	--milk: #f8f9fa;
 	--gray: gray;
-	--darkgray:rgb(48, 48, 48);
+	--darkgray: rgb(48, 48, 48);
 	--lightgray: rgb(219, 219, 219);
 	--turquoise: #3bb18f;
 	--blue: #00a3e1;
@@ -16,6 +16,7 @@
 body {
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
+	font-weight: 400;
 	margin: 0 auto;
 	letter-spacing: 0.5px;
 }
@@ -325,6 +326,10 @@ h3 {
 	color: var(--blue) !important;
 }
 
+.text-xxs {
+	font-size: 10px !important;
+}
+
 .text-xs {
 	font-size: 12px !important;
 }
@@ -333,24 +338,33 @@ h3 {
 	font-size: 14px !important;
 }
 
-.text-md{
+.text-md {
 	font-size: 20px !important;
+	line-height: 20px !important;
 }
 
-.text-lg{
+.text-xmd {
+	font-size: 24px !important;
+	line-height: 24px !important;
+}
+
+.text-lg {
 	font-size: 28px !important;
+	line-height: 28px !important;
 }
 
-.text-xl{
+.text-xl {
 	font-size: 36px !important;
+	line-height: 36px !important;
 }
 
 .text-xxl {
-	font-size: 48px !important;
+	font-size: 66px !important;
+	line-height: 66px !important;
 }
 
 .text-bold {
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .text-exbold {
@@ -370,14 +384,14 @@ h3 {
 }
 
 .bg-milk {
-	background-color: var(--milk)!important;
+	background-color: var(--milk) !important;
 }
 
 .bg-black {
 	background-color: var(--black) !important;
 }
 
-.bg-darkgray{
+.bg-darkgray {
 	background-color: var(--darkgray) !important;
 }
 
@@ -419,7 +433,7 @@ h3 {
 }
 
 .bradius {
-	border-radius: 5px !important;
+	border-radius: 4px !important;
 }
 
 .bg-none {
@@ -456,6 +470,7 @@ h3 {
 	background-color: transparent;
 	border: 1px solid var(--white);
 	color: var(--white);
+	letter-spacing: 2px;
 }
 
 .sticky-top {
@@ -470,15 +485,15 @@ h3 {
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom:0;
+	bottom: 0;
 	height: 100%;
 	position: absolute;
 }
 
 .cards-overlay {
-	background:linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
 	left: 15px;
-	right: 15px; 
+	right: 15px;
 }
 
 .text {
@@ -496,8 +511,8 @@ h3 {
 }
 
 .banner-text {
-	top:45%;
-	left:75%;
+	top: 45%;
+	left: 75%;
 }
 
 .caption {
@@ -522,12 +537,11 @@ h3 {
 	background-color: var(--white) !important;
 	color: var(--turquoise) !important;
 	text-decoration: none !important;
-
 }
 
 .slick-dots li button:before {
 	font-size: 32px;
-	color:var(--turquoise);
+	color: var(--turquoise);
 }
 
 .carousel-control.left,
@@ -536,20 +550,126 @@ h3 {
 	filter: none !important;
 }
 
-.carousel-inner .item .img-responsive{
+.carousel-inner .item .img-responsive {
 	max-height: calc(100vh - 137px);
+}
+
+i {
+	font-style: normal !important;
+	font-weight: 400 !important;
+}
+
+/* carousel */
+
+.cd-headline.type .cd-words-wrapper {
+	vertical-align: top;
+	overflow: hidden;
+}
+.cd-headline.type .cd-words-wrapper::after {
+	/* vertical bar */
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	bottom: auto;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	height: 90%;
+	width: 1px;
+}
+.cd-headline.type .cd-words-wrapper.waiting::after {
+	-webkit-animation: cd-pulse 1s infinite;
+	-moz-animation: cd-pulse 1s infinite;
+	animation: cd-pulse 1s infinite;
+}
+
+.cd-headline.type .cd-words-wrapper.selected::after {
+	visibility: hidden;
+}
+.cd-headline.type .cd-words-wrapper.selected b {
+	color: #0d0d0d;
+}
+.cd-headline.type b {
+	visibility: hidden;
+}
+.cd-headline.type b.is-visible {
+	visibility: visible;
+}
+.cd-headline.type i {
+	position: absolute;
+	visibility: hidden;
+}
+.cd-headline.type i.in {
+	position: relative;
+	visibility: visible;
+}
+
+@-webkit-keyframes cd-pulse {
+	0% {
+		-webkit-transform: translateY(-50%) scale(1);
+		opacity: 1;
+	}
+	40% {
+		-webkit-transform: translateY(-50%) scale(0.9);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateY(-50%) scale(0);
+		opacity: 0;
+	}
+}
+@-moz-keyframes cd-pulse {
+	0% {
+		-moz-transform: translateY(-50%) scale(1);
+		opacity: 1;
+	}
+	40% {
+		-moz-transform: translateY(-50%) scale(0.9);
+		opacity: 0;
+	}
+	100% {
+		-moz-transform: translateY(-50%) scale(0);
+		opacity: 0;
+	}
+}
+@keyframes cd-pulse {
+	0% {
+		-webkit-transform: translateY(-50%) scale(1);
+		-moz-transform: translateY(-50%) scale(1);
+		-ms-transform: translateY(-50%) scale(1);
+		-o-transform: translateY(-50%) scale(1);
+		transform: translateY(-50%) scale(1);
+		opacity: 1;
+	}
+	40% {
+		-webkit-transform: translateY(-50%) scale(0.9);
+		-moz-transform: translateY(-50%) scale(0.9);
+		-ms-transform: translateY(-50%) scale(0.9);
+		-o-transform: translateY(-50%) scale(0.9);
+		transform: translateY(-50%) scale(0.9);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateY(-50%) scale(0);
+		-moz-transform: translateY(-50%) scale(0);
+		-ms-transform: translateY(-50%) scale(0);
+		-o-transform: translateY(-50%) scale(0);
+		transform: translateY(-50%) scale(0);
+		opacity: 0;
+	}
 }
 
 .form-group .form-control {
 	padding: 20px 10px;
-	
 }
 
 @media (max-width: 1200px) {
 	.navbar-nav .nav-item {
 		padding: 0 20px;
 	}
-	
 }
 
 @media (max-width: 540px) {
@@ -564,9 +684,8 @@ h3 {
 
 	.banner .text-xl,
 	.banner .text-xxl,
-	.card-text span{
+	.card-text span {
 		font-size: 24px !important;
-		
 	}
 
 	.pull-right,
@@ -586,18 +705,18 @@ h3 {
 		text-align: center;
 	}
 
-	.navbar-nav .nav-item{
+	.navbar-nav .nav-item {
 		display: block !important;
 		text-align: center;
 		padding: 5px 0;
 	}
 
-	.form-group{
+	.form-group {
 		margin-right: 0 !important;
 	}
 
-	.carousel-caption .py-1, 
-	.carousel-caption .py-2, 
+	.carousel-caption .py-1,
+	.carousel-caption .py-2,
 	.carousel-caption .py-3 {
 		padding: 5px !important;
 	}
@@ -606,7 +725,7 @@ h3 {
 		padding: 15px !important;
 	}
 
-	.carousel-caption .text-light{
+	.carousel-caption .text-light {
 		margin-top: -20px;
 	}
 	.carousel-indicators {
@@ -614,7 +733,7 @@ h3 {
 	}
 
 	.card-image {
-		width:100%;
+		width: 100%;
 	}
 
 	.px-2,
@@ -649,8 +768,7 @@ h3 {
 		margin-top: 30px !important;
 	}
 	.mt-2,
-	.mt-3
-	{
+	.mt-3 {
 		margin-top: 15px !important;
 	}
 
