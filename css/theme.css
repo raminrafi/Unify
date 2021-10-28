@@ -8,8 +8,8 @@
 	--milk: #f8f9fa;
 	--gray: gray;
 	--darkgray:rgb(48, 48, 48);
-	--lightgray: rgb(199, 199, 199);
-	--turquoise: #46ddb0;
+	--lightgray: rgb(219, 219, 219);
+	--turquoise: #3bb18f;
 	--blue: #00a3e1;
 }
 
@@ -24,10 +24,18 @@ body {
 	letter-spacing: 3px;
 }
 
+.navbar {
+	font-size: 14px;
+}
+
 .container {
 	max-width: 1200px;
 	/* outline: 1px solid var(--orange); */
 }
+/* 
+.row {
+	outline: 1px solid var(--orange);
+} */
 
 p {
 	line-height: 28px;
@@ -281,6 +289,10 @@ h3 {
 	align-items: center !important;
 }
 
+.v-top {
+	vertical-align: top !important;
+}
+
 .justify-content-center {
 	justify-content: center !important;
 }
@@ -318,11 +330,11 @@ h3 {
 }
 
 .text-sm {
-	font-size: 16px !important;
+	font-size: 14px !important;
 }
 
 .text-md{
-	font-size: 24px !important;
+	font-size: 20px !important;
 }
 
 .text-lg{
@@ -414,8 +426,8 @@ h3 {
 	background: none !important;
 }
 
-.border-top {
-	border-top: 4px solid var(--lightgray);
+.border {
+	border: 1px solid var(--lightgray);
 }
 
 .border-bottom {
@@ -429,6 +441,10 @@ h3 {
 .btn {
 	border-radius: 0;
 	border: 1px solid;
+}
+
+.b-none {
+	border: none !important;
 }
 
 .btn-transparent:hover {
@@ -479,6 +495,15 @@ h3 {
 	left: 25%;
 }
 
+.banner-text {
+	top:45%;
+	left:75%;
+}
+
+.caption {
+	padding: 8px;
+}
+
 .navbar-nav .nav-item {
 	padding: 0 50px;
 }
@@ -511,13 +536,8 @@ h3 {
 	filter: none !important;
 }
 
-.img-responsive {
-	max-height: 100vh;
-}
-
 .carousel-inner .item .img-responsive{
 	max-height: calc(100vh - 137px);
-	width: 100%;
 }
 
 .form-group .form-control {
@@ -540,6 +560,22 @@ h3 {
 	.text-md,
 	body {
 		font-size: 16px !important;
+	}
+
+	.banner .text-xl,
+	.banner .text-xxl,
+	.card-text span{
+		font-size: 24px !important;
+		
+	}
+
+	.pull-right,
+	.pull-left {
+		float: none !important;
+	}
+
+	.d-inlineblock {
+		display: block !important;
 	}
 
 	.btn-transparent {
@@ -577,6 +613,10 @@ h3 {
 		display: none !important;
 	}
 
+	.card-image {
+		width:100%;
+	}
+
 	.px-2,
 	.px-4,
 	.px-3,
@@ -591,5 +631,32 @@ h3 {
 	.mx-4 {
 		margin-left: 15px !important;
 		margin-right: 15px !important;
+	}
+
+	.ml-2,
+	.ml-3,
+	.ml-4 {
+		margin-left: 15px !important;
+	}
+
+	.mr-2,
+	.mr-3,
+	.mr-4 {
+		margin-right: 15px !important;
+	}
+
+	.mt-4 {
+		margin-top: 30px !important;
+	}
+	.mt-2,
+	.mt-3
+	{
+		margin-top: 15px !important;
+	}
+
+	.mb-2,
+	.mb-3,
+	.mb-4 {
+		margin-bottom: 15px !important;
 	}
 }
