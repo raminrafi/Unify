@@ -15,137 +15,144 @@
 		<title>Unify</title>
 	</head>
 	<body>
-		<header>
-			<!--Navigation Bar (Min header)  -->
-			<nav class="navbar navbar-expand-lg py-1 px-4 mb-0 bg-black bradius-none">
-				<div class="navbar-collapse clearfix" id="navbarSupportedContent">
-					<!-- Social Media Links -->
-					<ul class="navbar-nav list-unstyled list-inline">
-						<li class="nav-item active">
-							<a class="nav-link text-muted mr-1" href="#"><i class="fab fa-facebook"></i></a>
-							<a class="nav-link text-muted mr-1" href="#"><i class="fab fa-twitter"></i></a>
-							<a class="nav-link text-muted mr-1" href="#"><i class="fab fa-tumblr"></i></a>
-							<a class="nav-link text-muted mr-1" href="#"><i class="fab fa-pinterest"></i></a>
-							<a class="nav-link text-muted mr-1" href="#"><i class="fab fa-google"></i></a>
-						</li>
-						<!-- Contact Number -->
-						<li class="nav-item">
-							<a href="#" class="py-1 text-muted">
-								<i class="fas fa-mobile-alt px-1"></i>
-								<span>(+1) 234 5678 9101</span>
-							</a>
-						</li>
-						<!-- Languages -->
-						<li class="nav-item">
-							<a href="#" class="py-1 text-muted">
-								<i class="fas fa-euro-sign px-1"></i>
-								<span>Euro |</span>
-							</a>
-							<a href="#" class="py-1 text-muted">
-								<i class="flag-icon flag-icon-gb px-1"></i>
-								<span>English</span>
-							</a>
-						</li>
-						<!-- Help Bar -->
-						<li class="nav-item">
-							<span class="py-1 text-muted">
-								<a class="text-muted" href="#"> Our Stores </a> | <a class="text-muted" href="#"> Help </a> | <a class="text-muted" href="#"> Account</a>
-							</span>
-						</li>
-						<!-- Shopping Cart -->
-						<li class="nav-item">
-							<a class="py-1 text-muted">
-								<i class="fas fa-shopping-cart px-1"></i>
-							</a>
-							<a class="py-1 text-muted">
-								<i class="fas fa-search"></i>
-							</a>
-						</li>
-					</ul>
+		<header class="bg-black">
+			<div class="container px-0">
+				<div class="row px-0">
+					<!--Navigation Bar (Min header)  -->
+					<nav class="navbar navbar-expand-lg py-1 mb-0 bg-black bradius-none">
+						<div class="navbar-collapse clearfix" id="navbarSupportedContent">
+							<!-- Social Media Links -->
+							<ul class="navbar-nav list-unstyled list-inline">
+								<li class="nav-item active px-0">
+									<a class="nav-link" href="#"><i class="fab nav-icons text-xs fa-facebook"></i></a>
+									<a class="nav-link" href="#"><i class="fab nav-icons text-xs fa-twitter"></i></a>
+									<a class="nav-link" href="#"><i class="fab nav-icons text-xs fa-tumblr"></i></a>
+									<a class="nav-link" href="#"><i class="fab nav-icons text-xs fa-pinterest"></i></a>
+									<a class="nav-link" href="#"><i class="fab nav-icons text-xs fa-google"></i></a>
+								</li>
+								<!-- Contact Number -->
+								<li class="nav-item">
+									<a href="#" class="py-1">
+										<i class="fas fa-mobile-alt nav-icons"></i>
+										<span class="mr-1">8 800 1234 4321</span>
+									</a>
+								</li>
+								<!-- Languages -->
+								<li class="nav-item">
+									<a href="#" class="py-1">
+										<i class="language-icon fas fa-euro-sign"></i>
+										Euro
+									</a>
+									<span class="language-divider"> | </span>
+									<a href="#" class="py-1">
+										<i class="language-icon flag-icon flag-icon-gb"></i>
+										<span>English</span>
+									</a>
+								</li>
+								<!-- Help Bar -->
+								<li class="nav-item">
+									<span class="py-1">
+										<a class="" href="#"> Our Stores </a> <span class="language-divider"> | </span><a class="" href="#"> Help </a>
+										<span class="language-divider"> | </span> <a class="" href="#"> Account</a>
+									</span>
+								</li>
+								<!-- Shopping Cart -->
+								<li class="nav-item mr-0 px-2">
+									<a class="py-1">
+										<i class="fas fa-shopping-cart px-1"></i>
+									</a>
+									<a class="py-1">
+										<i class="fas fa-search"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
 				</div>
-			</nav>
+			</div>
 		</header>
 
 		<!-- Header -->
-		<nav class="navbar bradius-none bg-white navbar-light clearfix mb-0 px-4">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header text-center text-uppercase px-4">
-				<h1 class="py-0 my-1 text-black">
-					<strong class="logo">unify</strong>
-					<small class="text-xs d-block"><i class="fas fa-bars"></i> since 1980 <i class="fas fa-bars"></i> </small>
-				</h1>
+		<div class="container px-0">
+			<div class="row px-0">
+				<nav class="navbar navbar-main mb-0 bradius-none bg-white navbar-light clearfix">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header text-center text-uppercase px-3">
+						<img src="images/logo.png" alt="logo here" class="img-responsive" />
+					</div>
+					<!-- Navigation tabs -->
+					<div class="pull-right mr-4">
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active dropdown px-1">
+									<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
+										Home <span class="fas fa-angle-down"></span
+									></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li class="dropdown px-1">
+									<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"
+										>Pages <span class="fas fa-angle-down"></span
+									></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+									</ul>
+								</li>
+								<li class="dropdown px-1">
+									<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"
+										>Categories <span class="fas fa-angle-down"></span
+									></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+									</ul>
+								</li>
+								<li class="dropdown px-1">
+									<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"
+										>Watch <span class="fas fa-angle-down"></span
+									></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+									</ul>
+								</li>
+								<li class="dropdown px-1">
+									<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"
+										>Catalogue <span class="fas fa-angle-down"></span
+									></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+									</ul>
+								</li>
+								<li class="dropdown px-1">
+									<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"
+										>New Arrivals <span class="fas fa-angle-down"></span
+									></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+									</ul>
+								</li>
+								<li>
+									<a class="text-black text-uppercase" href="#">Main</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
 			</div>
-			<!-- Navigation tabs -->
-			<div class="pull-right">
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="active dropdown px-1 py-1">
-							<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-								Home <span class="fas fa-angle-down"></span
-							></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">One more separated link</a></li>
-							</ul>
-						</li>
-						<li class="dropdown py-1 px-1">
-							<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"
-								>Pages <span class="fas fa-angle-down"></span
-							></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-							</ul>
-						</li>
-						<li class="dropdown py-1 px-1">
-							<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"
-								>Categories <span class="fas fa-angle-down"></span
-							></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-							</ul>
-						</li>
-						<li class="dropdown py-1 px-1">
-							<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"
-								>Watch <span class="fas fa-angle-down"></span
-							></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-							</ul>
-						</li>
-						<li class="dropdown py-1 px-1">
-							<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"
-								>Catalogue <span class="fas fa-angle-down"></span
-							></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-							</ul>
-						</li>
-						<li class="dropdown py-1 px-1">
-							<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"
-								>New Arrivals <span class="fas fa-angle-down"></span
-							></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-							</ul>
-						</li>
-						<li class="py-1 px-1">
-							<a class="text-black text-uppercase" href="#">Main</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+		</div>
 
 		<!-- Carousel -->
 		<div id="carousel" class="carousel slide" data-ride="carousel">
@@ -178,9 +185,9 @@
 								</section>
 								<!-- Slide buttons -->
 								<div class="py-4">
-									<a href="#" class="bradius btn btn-transparent px-4 py-1 text-xxs text-exbold text-uppercase d-inlineblock">Shop now</a>
+									<a href="#" class="bradius btn btn-transparent px-3 text-xxs text-exbold text-uppercase d-inlineblock">Shop now</a>
 									<span class="px-2 italic">or</span>
-									<a href="#" class="bradius btn btn-transparent px-4 py-1 text-xxs text-exbold text-uppercase d-inlineblock">Contact</a>
+									<a href="#" class="bradius btn btn-transparent px-3 text-xxs text-exbold text-uppercase d-inlineblock">Contact</a>
 								</div>
 							</div>
 						</div>
@@ -226,9 +233,9 @@
 								</section>
 								<!-- Slide buttons -->
 								<div class="py-4">
-									<a href="#" class="bradius btn btn-transparent px-4 py-1 text-xxs text-exbold text-uppercase d-inlineblock">Shop now</a>
+									<a href="#" class="bradius btn btn-transparent px-3 text-xxs text-exbold text-uppercase d-inlineblock">Shop now</a>
 									<span class="px-2 italic">or</span>
-									<a href="#" class="bradius btn btn-transparent px-4 py-1 text-xxs text-exbold text-uppercase d-inlineblock">Contact</a>
+									<a href="#" class="bradius btn btn-transparent px-3 text-xxs text-exbold text-uppercase d-inlineblock">Contact</a>
 								</div>
 							</div>
 						</div>
@@ -669,7 +676,7 @@
 				</div>
 
 				<!-- Card 1 -->
-				<div class="col-md-4 my-3">
+				<div class="col-md-4 my-2">
 					<!-- Responsive image -->
 					<img class="img-responsive position-relative" width="100%" src="images/blog1.jpg" alt="Image here" />
 					<!-- Text overlay -->
@@ -683,7 +690,7 @@
 				</div>
 
 				<!-- Card 2 -->
-				<div class="col-md-4 my-3">
+				<div class="col-md-4 my-2">
 					<!-- Responsive image -->
 					<img class="img-responsive position-relative" width="100%" src="images/blog2.jpg" alt="Image here" />
 					<!-- Text overlay -->
@@ -697,7 +704,7 @@
 				</div>
 
 				<!-- Card 3 -->
-				<div class="col-md-4 my-3">
+				<div class="col-md-4 my-2">
 					<!-- Responsive image -->
 					<img class="img-responsive position-relative" width="100%" src="images/blog3.jpg" alt="Image here" />
 					<!-- Text overlay -->
@@ -713,106 +720,138 @@
 		</div>
 
 		<!-- Footer -->
-		<footer class="bg-darkgray">
-			<div class="container">
-				<div class="row px-1 py-4 text-xs">
-					<!-- Products -->
-					<div class="col-md-5">
-						<h5 class="text-light py-1 text-capitalize">products</h5>
-						<div class="row text-muted py-1">
-							<div class="col-md-4">
-								<ul class="list-unstyled">
-									<li class="mb-1">SmartPhone</li>
-									<li class="mb-1">Laptop</li>
-									<li class="mb-1">Mouse</li>
-									<li class="mb-1">Monitor</li>
-									<li class="mb-1">Watch</li>
-								</ul>
+		<footer class="bg-darkgray footer">
+			<div class="footer-container border-bottom bg-darkgray text-muted">
+				<div class="container">
+					<div class="row px-1 pt-4 pb-3">
+						<!-- Products -->
+						<div class="col-md-5 widget">
+							<div class="widget-row">
+								<h2 class="text-capitalize">products</h2>
+								<div class="row text-gray py-1">
+									<div class="col-md-4">
+										<ul class="list-unstyled">
+											<li><a href="#">SmartPhone</a></li>
+											<li><a href="#">Laptop</a></li>
+											<li><a href="#">Mouse</a></li>
+											<li><a href="#">Monitor</a></li>
+											<li><a href="#">Watch</a></li>
+										</ul>
+									</div>
+									<div class="col-md-4">
+										<ul class="list-unstyled">
+											<li><a href="#">Tablet</a></li>
+											<li><a href="#">Accessorie</a></li>
+											<li><a href="#">Mouses Pad</a></li>
+											<li><a href="#">Handset</a></li>
+											<li><a href="#">Tablet</a></li>
+										</ul>
+									</div>
+									<div class="col-md-4">
+										<ul class="list-unstyled mb-1">
+											<li><a href="#">Speakers</a></li>
+											<li><a href="#">Camera</a></li>
+											<li><a href="#">Play Station</a></li>
+											<li><a href="#">Xbox</a></li>
+										</ul>
+									</div>
+								</div>
 							</div>
-							<div class="col-md-4">
-								<ul class="list-unstyled">
-									<li class="mb-1">Tablet</li>
-									<li class="mb-1">Accessorie</li>
-									<li class="mb-1">Mouses Pad</li>
-									<li class="mb-1">Handset</li>
-									<li class="mb-1">Tablet</li>
-								</ul>
-							</div>
-							<div class="col-md-4">
-								<ul class="list-unstyled">
-									<li class="mb-1">Speakers</li>
-									<li class="mb-1">Camera</li>
-									<li class="mb-1">Play Station</li>
-									<li class="mb-2">Xbox</li>
-								</ul>
-							</div>
-						</div>
 
-						<div>
-							<h5 class="text-capitalize text-light py-1">Subscribe</h5>
-							<div class="form-group mr-2">
-								<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+							<h2 class="text-capitalize my-0 pt-2">Subscribe</h2>
+							<div class="form-group text-gray my-0 mr-2">
 								<div class="input-group">
-									<input type="text" class="bradius-none bg-darkgray form-control" id="exampleInputAmount" placeholder="Enter your email" />
-									<div class="bradius-none bg-turquoise input-group-addon"><i class="fas fa-angle-right px-1"></i></div>
+									<input type="text" class="bradius-none bg-darkgray text-muted form-control" id="exampleInputAmount" placeholder="Enter your email" />
+
+									<div class="bg-turquoise input-group-addon"><i class="fas fa-angle-right"></i></div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<!-- Brands -->
-					<div class="col-md-3">
-						<h5 class="text-light py-1 text-capitalize">Brands</h5>
-						<div class="row text-muted py-1">
-							<div class="col-md-6">
-								<ul class="list-unstyled">
-									<li class="mb-1">Logitech</li>
-									<li class="mb-1">Samsung</li>
-									<li class="mb-1">Microsoft</li>
-									<li class="mb-2">Apple</li>
-								</ul>
+						<!-- Brands -->
+						<div class="col-md-3 widget">
+							<div class="widget-row">
+								<h2 class="text-capitalize">Brands</h2>
+								<div class="row text-gray py-1">
+									<div class="col-md-6">
+										<ul class="list-unstyled">
+											<li><a href="#">Logitech</a></li>
+											<li><a href="#">Samsung</a></li>
+											<li><a href="#">Microsoft</a></li>
+											<li><a href="#">Apple</a></li>
+											<li class="o-none"><a href="#">Apple</a></li>
+										</ul>
+									</div>
+									<div class="col-md-6">
+										<ul class="list-unstyled">
+											<li><a href="#">Huawei</a></li>
+											<li><a href="#">Motorola</a></li>
+											<li><a href="#">Sony</a></li>
+											<li><a href="#">Nokia</a></li>
+											<li class="o-none"><a href="#">Apple</a></li>
+										</ul>
+									</div>
+								</div>
 							</div>
-							<div class="col-md-6">
-								<ul class="list-unstyled">
-									<li class="mb-1">Huawei</li>
-									<li class="mb-1">Motorola</li>
-									<li class="mb-1">Sony</li>
-									<li class="mb-2">Nokia</li>
-								</ul>
+
+							<h2 class="text-capitalize my-0 pt-2">Language/Currency:</h2>
+							<div class="language text-gray my-0">
+								<span class="text-gray"> <i class="flag-icon flag-icon-gb"></i> English <i class="fas fa-caret-up"></i></span>
+								<span class="ml-3 text-gray"> <i class="fas fa-euro-sign"></i> Euro <i class="fas fa-caret-up"></i></span>
 							</div>
 						</div>
 
-						<div class="py-1">
-							<h5 class="text-capitalize text-light py-1">Language/Currency</h5>
-							<span class="py-1 text-muted"> <i class="flag-icon flag-icon-gb"></i> English <i class="fas fa-caret-up"></i></span>
-							<span class="py-1 ml-3 text-muted"> <i class="fas fa-euro-sign"></i> Euro <i class="fas fa-caret-up"></i></span>
-						</div>
-					</div>
+						<!-- Contact us -->
+						<div class="widget col-md-3 col-md-offset-1">
+							<div class="widget-row">
+								<h2 class="text-capitalize">Contacts</h2>
+								<div class="row pt-1 px-1">
+									<div class="col-md-1 px-0">
+										<ul class="list-unstyled text-gray">
+											<li><i class="fas fa-user"></i></li>
+											<li><i class="fas fa-envelope"></i></li>
+											<li><i class="fas fa-phone"></i></li>
+											<li class="o-none"><a href="#">Apple</a></li>
+											<li class="o-none"><a href="#">Apple</a></li>
+										</ul>
+									</div>
+									<div class="col-md-9 px-0">
+										<ul class="list-unstyled text-gray">
+											<li class="contact-text">Unit 25 Suite 3, 925 Prospect PI New York Avenue</li>
+											<li class="contact-text">fusion@support.com</li>
+											<li class="contact-text">+32 333 444 555</li>
+											<li class="o-none"><a href="#">Apple</a></li>
+											<li class="o-none"><a href="#">Apple</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
 
-					<!-- Contact us -->
-					<div class="col-md-3 col-md-offset-1">
-						<h5 class="text-light py-1 text-capitalize">Contacts</h5>
-						<ul class="list-unstyled text-muted">
-							<li class="mb-1"><i class="fas fa-user"></i> Unit 25 Suite 3, 925 Prospect PI New York Avenue</li>
-							<li class="mb-1"><i class="fas fa-envelope"></i> fusion@support.com</li>
-							<li class="mb-3"><i class="fas fa-phone"></i> +32 333 444 555</li>
-						</ul>
-
-						<!-- Follow Us -->
-						<div class="py-3">
-							<h5 class="text-capitalize text-light py-1">Follow us</h5>
-							<i class="fab fa-facebook mr-1 text-muted"></i>
-							<i class="fab fa-twitter mr-1 text-muted"></i>
-							<i class="fab fa-instagram mr-1 text-muted"></i>
-							<i class="fab fa-google-plus mr-1 text-muted"></i>
-							<i class="fab fa-linkedin mr-1 text-muted"></i>
+							<!-- Follow Us -->
+							<h2 class="text-capitalize my-0 follow">Follow Us On:</h2>
+							<i class="follow-icon fab fa-facebook text-muted"></i>
+							<i class="follow-icon fab fa-twitter text-muted"></i>
+							<i class="follow-icon fab fa-instagram text-muted"></i>
+							<i class="follow-icon fab fa-google-plus text-muted"></i>
+							<i class="follow-icon fab fa-linkedin text-muted"></i>
 						</div>
 					</div>
 				</div>
-
-				<!-- Footer foot -->
-				<div class="align-items-center border-top text-center text-muted">
-					<span class="d-inlineblock py-2">2018 © Fusion. All rights reserved</span>
+			</div>
+			<!-- Footer foot -->
+			<div class="bg-darkgray foot text-muted">
+				<div class="container">
+					<div class="row px-2 clearfix">
+						<span class="copyright d-inlineblock">2020 © Htmlstream. All Rights Reserved.</span>
+						<div class="pull-right">
+							<i class="fab cards fa-cc-paypal"></i>
+							<i class="fab cards fa-cc-visa"></i>
+							<i class="fab cards fa-cc-mastercard"></i>
+							<i class="fab cards fa-cc-stripe"></i>
+							<i class="fab cards fa-cc-discover"></i>
+							<i class="fab cards fa-cc-jcb"></i>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>
