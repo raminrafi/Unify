@@ -403,7 +403,7 @@ h3 {
 }
 
 .text-bold {
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .text-exbold {
@@ -640,6 +640,10 @@ header .navbar ul {
 
 i {
 	font-style: normal !important;
+}
+
+.carousel-caption h1{
+	margin-top: 5px;
 }
 
 /* carousel */
