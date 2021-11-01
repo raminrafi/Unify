@@ -795,7 +795,7 @@ footer .footer-container {
 	font-weight: 500;
 	color: var(--lightgray);
 	margin-top: 40px;
-	margin-bottom: 5px;
+	margin-bottom: 4px;
 }
 
 .widget li {
@@ -830,10 +830,17 @@ li a:active {
 	color: var(--turquoise);
 }
 
-.input-group {
-	margin-top: 7px;
+.widget .widget-row {
+	margin-bottom: -5px;
 }
 
+.language span:not(:first-child){
+	padding-left:3px;
+}
+
+.language .flag-icon {
+	margin-left: -7px;
+}
 
 .widget .language,
 .widget .form-group .input-group {
@@ -843,7 +850,7 @@ li a:active {
 }
 
 .language {
-	font-size: 16px !important;
+	margin-top:12px;
 }
 
 .follow {
@@ -861,7 +868,7 @@ li a:active {
 	text-align: center;
 }
 
-.language .flagicon,
+
 .language i {
 	margin: 5px !important;
 }
