@@ -11,83 +11,148 @@
 		<link rel="stylesheet" href="lib/css/slick.css" />
 		<link rel="stylesheet" href="lib/css/slick-theme.css" />
 
-		<link rel="stylesheet" href="css/theme.css" />
-		<title>Animated Header</title>
+		<link rel="stylesheet" href="css/temp.css" />
+		<title>Unify</title>
 	</head>
 	<body>
-		<div class="container-fluid">
-			<div class="flex-container justify-content-center navbar mb-0">
-				<div class="config flex-item-left clearfix">
-					<a> Hilfe & Kontakt </a>
-					<div class="dropdown d-inlineblock ml-2">
-						<select class="select">
-							<option value="">Kadewe, Berlin</option>
-							<option value="">Kadewe, Tokyo</option>
-							<option value="">Kadewe, Nairobi</option>
-						</select>
-					</div>
-				</div>
-				<div class="config flex-item-middle text-center">
-					<img class="" src="images/logo.png" alt="logo here" class="img-responsive" />
-				</div>
-				<div class="config flex-item-right text-right">
-					<div class="icons">
-						<i class="fa fa-search"></i>
-						<i class="fa fa-user"></i>
-						<i class="fa fa-shopping-cart"></i>
-					</div>
+		<header class="bg-black">
+			<div class="container px-0">
+				<div class="row px-0">
+					<!--Navigation Bar (Min header)  -->
+					<nav class="navbar navbar-expand-lg py-1 mb-0 bg-black bradius-none">
+						<div class="navbar-collapse clearfix" id="navbarSupportedContent">
+							<!-- Social Media Links -->
+							<ul class="navbar-nav list-unstyled list-inline">
+								<li class="nav-item active px-0">
+									<a class="nav-link" href="#"><i class="fab nav-icons text-xs fa-facebook"></i></a>
+									<a class="nav-link" href="#"><i class="fab nav-icons text-xs fa-twitter"></i></a>
+									<a class="nav-link" href="#"><i class="fab nav-icons text-xs fa-tumblr"></i></a>
+									<a class="nav-link" href="#"><i class="fab nav-icons text-xs fa-pinterest"></i></a>
+									<a class="nav-link" href="#"><i class="fab nav-icons text-xs fa-google"></i></a>
+								</li>
+								<!-- Contact Number -->
+								<li class="nav-item">
+									<a href="#" class="py-1">
+										<i class="fas fa-mobile-alt nav-icons"></i>
+										<span class="mr-1">8 800 1234 4321</span>
+									</a>
+								</li>
+								<!-- Languages -->
+								<li class="nav-item">
+									<a href="#" class="py-1">
+										<i class="language-icon fas fa-euro-sign"></i>
+										Euro
+									</a>
+									<span class="language-divider"> | </span>
+									<a href="#" class="py-1">
+										<i class="language-icon flag-icon flag-icon-gb"></i>
+										<span>English</span>
+									</a>
+								</li>
+								<!-- Help Bar -->
+								<li class="nav-item">
+									<span class="py-1">
+										<a class="" href="#"> Our Stores </a> <span class="language-divider"> | </span><a class="" href="#"> Help </a>
+										<span class="language-divider"> | </span> <a class="" href="#"> Account</a>
+									</span>
+								</li>
+								<!-- Shopping Cart -->
+								<li class="nav-item mr-0 px-2">
+									<a class="py-1">
+										<i class="fas fa-shopping-cart px-1"></i>
+									</a>
+									<a class="py-1">
+										<i class="fas fa-search"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
 				</div>
 			</div>
-			<div class="flex-container navbar min-header justify-content-center">
-				<div class="animation-left flex-item-left logo">
-					<img class="" src="images/logo.png" alt="logo here" class="img-responsive" />
-				</div>
-				<ul class="nav text-center flex-item-middle navbar-nav">
-					<li class="active">
-						<a class="text-black text-uppercase" href="#">Damen</a>
-					</li>
-					<li>
-						<a class="text-black text-uppercase" href="#">Herren</a>
-					</li>
-					<li>
-						<a class="text-black text-uppercase" href="#">Kids</a>
-					</li>
-					<li>
-						<a class="text-black text-uppercase" href="#">Beauty</a>
-					</li>
-					<li>
-						<a class="text-black text-uppercase" href="#">Strore</a>
-					</li>
-					<li>
-						<a class="text-black text-uppercase" href="#">Live</a>
-					</li>
-				</ul>
-				<div class="animation-right flex-item-right logo text-right">
-					<div class="icons">
-						<i class="fa fa-search"></i>
-						<i class="fa fa-user"></i>
-						<i class="fa fa-shopping-cart"></i>
-					</div>
-				</div>
-			</div>
-		</div>
+		</header>
 
 		<!-- Header -->
-		<!-- <div class="container-fluid">
-			<nav class="flex-container align-items-center navbar clearfix navbar-main mb-0 bradius-none bg-white navbar-light">
-				<div class="config flex-item-left mr-2">
-					<a>Hilfe & Kontakt</a>
-				</div>
-				
-				<div class="flex-item-middle text-center text-uppercase">
-					<img src="images/logo.png" alt="logo here" class="img-responsive" />
-				</div>
-
-				<div class="flex-item-right">
-
-				</div>
-			</nav>
-		</div> -->
+		<div class="container px-0">
+			<div class="row px-0">
+				<nav class="navbar navbar-main mb-0 bradius-none bg-white navbar-light clearfix">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header text-center text-uppercase px-3">
+						<img src="images/logo.png" alt="logo here" class="img-responsive" />
+					</div>
+					<!-- Navigation tabs -->
+					<div class="pull-right mr-4">
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active dropdown px-1">
+									<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
+										Home <span class="fas fa-angle-down"></span
+									></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li class="dropdown px-1">
+									<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"
+										>Pages <span class="fas fa-angle-down"></span
+									></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+									</ul>
+								</li>
+								<li class="dropdown px-1">
+									<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"
+										>Categories <span class="fas fa-angle-down"></span
+									></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+									</ul>
+								</li>
+								<li class="dropdown px-1">
+									<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"
+										>Watch <span class="fas fa-angle-down"></span
+									></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+									</ul>
+								</li>
+								<li class="dropdown px-1">
+									<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"
+										>Catalogue <span class="fas fa-angle-down"></span
+									></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+									</ul>
+								</li>
+								<li class="dropdown px-1">
+									<a class="text-black dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"
+										>New Arrivals <span class="fas fa-angle-down"></span
+									></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+									</ul>
+								</li>
+								<li>
+									<a class="text-black text-uppercase" href="#">Main</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
 
 		<!-- Carousel -->
 		<div id="carousel" class="carousel slide" data-ride="carousel">
@@ -237,7 +302,7 @@
 		<div class="container">
 			<div class="row py-4">
 				<!-- Card 1 -->
-				<div class="col-md-4 img-hover-zoom my-1">
+				<div class="col-md-4 my-1">
 					<!-- Responsive image -->
 					<img class="img-responsive position-relative" width="100%" src="images/card1.jpg" alt="Image here" />
 					<!-- Text overlay -->
@@ -250,7 +315,7 @@
 				</div>
 
 				<!-- Card 2 -->
-				<div class="col-md-4 img-hover-zoom my-1">
+				<div class="col-md-4 my-1">
 					<!-- Responsive image -->
 					<img class="img-responsive position-relative" width="100%" src="images/card2.jpg" alt="Image here" />
 					<!-- Text overlay -->
@@ -263,7 +328,7 @@
 				</div>
 
 				<!-- Card 3 -->
-				<div class="col-md-4 img-hover-zoom my-1">
+				<div class="col-md-4 my-1">
 					<!-- Responsive image -->
 					<img class="img-responsive position-relative" width="100%" src="images/card3.jpg" alt="Image here" />
 					<!-- Text overlay -->
@@ -797,18 +862,5 @@
 		<script type="text/javascript" src="lib/@ommu/animated-headline/js/main.js"></script>
 		<script type="text/javascript" src="lib/@ommu/animated-headline/js/modernizr.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
-		<script>
-			$(document).ready(function () {
-				var navpos = $(".navbar").offset();
-				console.log(navpos.top);
-				$(window).bind("scroll", function () {
-					if ($(window).scrollTop() > navpos.top) {
-						$("body").addClass("fixed");
-					} else {
-						$("body").removeClass("fixed");
-					}
-				});
-			});
-		</script>
 	</body>
 </html>
