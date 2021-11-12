@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="lib/fontawesome-free/css/all.min.css" />
 		<link rel="stylesheet" href="lib/flag-icon-css/css/flag-icons.min.css" />
+		<link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 		<link rel="stylesheet" href="lib/css/slick.css" />
 		<link rel="stylesheet" href="lib/css/slick-theme.css" />
 
@@ -16,7 +17,7 @@
 	</head>
 	<body>
 		<div class="container-fluid">
-			<div class="flex-container justify-content-center navbar mb-0">
+			<div id="header" class="flex-container justify-content-center navbar mb-0">
 				<div class="config flex-item-left clearfix">
 					<a> Hilfe & Kontakt </a>
 					<div class="dropdown d-inlineblock ml-2">
@@ -39,7 +40,7 @@
 				</div>
 			</div>
 			<div class="flex-container navbar min-header justify-content-center">
-				<div class="animation-left flex-item-left logo">
+				<div id="animationLeft" class="animation-left flex-item-left logo">
 					<img class="" src="images/logo.png" alt="logo here" class="img-responsive" />
 				</div>
 				<ul class="nav text-center flex-item-middle navbar-nav">
@@ -62,7 +63,7 @@
 						<a class="text-black text-uppercase" href="#">Live</a>
 					</li>
 				</ul>
-				<div class="animation-right flex-item-right logo text-right">
+				<div id="animationRight" class="animation-right flex-item-right logo text-right">
 					<div class="icons">
 						<i class="fa fa-search"></i>
 						<i class="fa fa-user"></i>
@@ -71,23 +72,6 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- Header -->
-		<!-- <div class="container-fluid">
-			<nav class="flex-container align-items-center navbar clearfix navbar-main mb-0 bradius-none bg-white navbar-light">
-				<div class="config flex-item-left mr-2">
-					<a>Hilfe & Kontakt</a>
-				</div>
-				
-				<div class="flex-item-middle text-center text-uppercase">
-					<img src="images/logo.png" alt="logo here" class="img-responsive" />
-				</div>
-
-				<div class="flex-item-right">
-
-				</div>
-			</nav>
-		</div> -->
 
 		<!-- Carousel -->
 		<div id="carousel" class="carousel slide" data-ride="carousel">
@@ -796,6 +780,7 @@
 		<script type="text/javascript" src="lib/js/slick.min.js"></script>
 		<script type="text/javascript" src="lib/@ommu/animated-headline/js/main.js"></script>
 		<script type="text/javascript" src="lib/@ommu/animated-headline/js/modernizr.js"></script>
+		<script type="text/javascript" src="node_modules/aos/dist/aos.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 		<script>
 			$(document).ready(function () {
@@ -804,8 +789,15 @@
 				$(window).bind("scroll", function () {
 					if ($(window).scrollTop() > navpos.top) {
 						$("body").addClass("fixed");
+						$("#animationLeft").removeClass("removeTransition");
+						$("#animationRight").removeClass("removeTransition");
 					} else {
-						$("body").removeClass("fixed");
+						setTimeout(function () {
+							$("body").removeClass("fixed");
+						}, 200);
+						// $("body").removeClass("fixed");
+						$("#animationLeft").addClass("removeTransition");
+						$("#animationRight").addClass("removeTransition");
 					}
 				});
 			});
