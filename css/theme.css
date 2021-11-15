@@ -999,6 +999,28 @@ li a:active {
 }
 
 /* Conifgurations */
+/* .slide-down {
+  top: -80px;
+  transition: all .6s ease 1.2s;
+  animation: slide-down 1s ease 0.3s ;
+}
+
+@keyframes slide-down {
+  0% {
+    top:-80px;
+  }
+  35% {
+    top:-40px;
+  }
+  70% {
+    top:-20px;
+  }
+  100% {
+    top: 0px;
+  }
+} */
+
+
 .fixed .navbar {
   display: none;
   background-color: var(--white) !important;
@@ -1012,25 +1034,20 @@ li a:active {
 
 .animation-left,
 .animation-right {
-  transition: all 1s ease-in-out;
+  position: relative;
+  transition: all .6s ease 1.2s;
   transition-delay: .5s;
-  opacity: 0;
+  overflow: hidden;
 }
 
-.removeTransition {
-  transition-delay: -2s !important;
-  opacity: 0;
+.animation-left {
+  margin-left: -200px;
 }
 
-.temp1 {
-  transition: all 1s ease-in-out;
-  transition-delay: 3s;
+.animation-right {
+  margin-right: -200px;
 }
 
-.temp2 {
-  transition: none !important;
-  transition-delay: 0s !important;
-}
 
 .fixed .navbar+.navbar {
   display: flex;
@@ -1102,6 +1119,7 @@ select {
 .flex-container {
   display: flex;
   align-items: center;
+  overflow: hidden !important;
 }
 
 .flex-item-left {
