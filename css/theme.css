@@ -999,27 +999,21 @@ li a:active {
 }
 
 /* Conifgurations */
+
 /* .slide-down {
   top: -80px;
   transition: all .6s ease 1.2s;
-  animation: slide-down 1s ease 0.3s ;
-}
-
-@keyframes slide-down {
-  0% {
-    top:-80px;
-  }
-  35% {
-    top:-40px;
-  }
-  70% {
-    top:-20px;
-  }
-  100% {
-    top: 0px;
-  }
+  animation: slide-down 1s ease 0.3s;
 } */
 
+@keyframes slide-down {
+  from {
+    top:-30px;
+  }
+  to {
+    top: 0px;
+  }
+}
 
 .fixed .navbar {
   display: none;
@@ -1030,6 +1024,16 @@ li a:active {
   left: 0;
   right: 0;
   z-index: 999;
+}
+
+.hiddenn {
+  visibility: hidden !important;
+
+}
+
+.visiblee {
+  visibility: visible !important;
+  animation: slide-down 1s ease-in;
 }
 
 .animation-left,

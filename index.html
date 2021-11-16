@@ -785,17 +785,6 @@
 		<script type="text/javascript" src="node_modules/aos/dist/aos.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 		<script>
-			// $(document).ready(function () {
-			// 	var position = $("#header").offset();
-			// 	console.log(position.top);
-			// 	$(window).bind("scroll", function () {
-			// 		if ($(window).scrollTop() > position.top) {
-			// 			$("#header").removeClass("slide-down");
-			// 		} else {
-			// 			$("#header").addClass("slide-down");
-			// 		}
-			// 	});
-			// });
 			$(document).ready(function () {
 				var navpos = $(".navbar").offset();
 				console.log(navpos.top);
@@ -803,14 +792,41 @@
 					//$("#header").slideDown("slow");
 					if ($(window).scrollTop() > navpos.top) {
 						$("body").addClass("fixed");
-						$("#animationLeft").removeClass("removeTransition");
-						$("#animationRight").removeClass("removeTransition");
+						// $("#header").hide();
 					} else {
+						$("body").removeClass("fixed");
+						$("#header").removeClass("visiblee");
+						$("#header").addClass("hidden");
+						$("#header").addClass("hiddenn");
 						setTimeout(function () {
-							$("body").removeClass("fixed");
-						}, 200);
-						$("#animationLeft").addClass("removeTransition");
-						$("#animationRight").addClass("removeTransition");
+							$("#header").removeClass("hidden");
+							setTimeout(function () {
+								$("#header").addClass("visiblee");
+							}, 500);
+						}, 1000);
+
+						// $("body").removeClass("fixed");
+						// $("#header").removeClass("visible");
+						// $("#header").addClass("hidden");
+						// setTimeout(function () {
+						// 	$("#header").removeClass("hidden");
+						// 	setTimeout(function () {
+						// 		$("#header").addClass("visiblee");
+						// 		$("#header").addClass("visible");
+						// 	}, 500);
+						// }, 1000);
+
+						// $("body").removeClass("fixed");
+						// $("#header").removeClass("visiblee");
+						// $("#header").addClass("hiddenn");
+						// setTimeout(function () {
+						// 	$("#header").removeClass("hiddenn");
+						// 	$(".visiblee").css({ opacity: "0 !important", top: "-85px !important" });
+						// 	$("#header").addClass("visiblee");
+						// 	setTimeout(function () {
+						// 		$(".visiblee").css({ opacity: "1 !important", top: "0 !important" });
+						// 	}, 500);
+						// }, 1000);
 					}
 				});
 			});
