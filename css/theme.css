@@ -1028,7 +1028,7 @@ li a:active {
 
 .visiblee {
   visibility: visible !important;
-  animation: slide-down 0.8s ease-in
+  animation: slide-down 0.8s ease-out;
 }
 
 .animation-left,
