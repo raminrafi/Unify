@@ -16,64 +16,66 @@
 		<title>Animated Header</title>
 	</head>
 	<body>
-		<div class="container-fluid">
-			<div id="header" class="flex-container justify-content-center navbar mb-0">
-				<div class="config flex-item-left clearfix">
-					<a> Hilfe & Kontakt </a>
-					<div class="dropdown d-inlineblock ml-2">
-						<select class="select">
-							<option value="">Kadewe, Berlin</option>
-							<option value="">Kadewe, Tokyo</option>
-							<option value="">Kadewe, Nairobi</option>
-						</select>
+		<nav class="wrapper-nav">
+			<div class="container-fluid">
+				<div id="header" class="flex-container justify-content-center navbar mb-0">
+					<div class="config flex-item-left clearfix">
+						<a> Hilfe & Kontakt </a>
+						<div class="dropdown d-inlineblock ml-2">
+							<select class="select">
+								<option value="">Kadewe, Berlin</option>
+								<option value="">Kadewe, Tokyo</option>
+								<option value="">Kadewe, Nairobi</option>
+							</select>
+						</div>
+					</div>
+					<div class="config flex-item-middle text-center">
+						<img src="images/logo.png" alt="logo here" class="img-responsive" />
+					</div>
+					<div class="config flex-item-right text-right">
+						<div class="icons">
+							<i class="fa fa-search"></i>
+							<i class="fa fa-user"></i>
+							<i class="fa fa-heart"></i>
+							<i class="fa fa-shopping-cart"></i>
+						</div>
 					</div>
 				</div>
-				<div class="config flex-item-middle text-center">
-					<img class="" src="images/logo.png" alt="logo here" class="img-responsive" />
-				</div>
-				<div class="config flex-item-right text-right">
-					<div class="icons">
-						<i class="fa fa-search"></i>
-						<i class="fa fa-user"></i>
-						<i class="fa fa-heart"></i>
-						<i class="fa fa-shopping-cart"></i>
+				<div class="flex-container navbar min-header justify-content-center">
+					<div id="animationLeft" class="animation-left flex-item-left logo">
+						<img class="" src="images/logo.png" alt="logo here" class="img-responsive" />
+					</div>
+					<ul class="nav text-center flex-item-middle navbar-nav">
+						<li class="active">
+							<a class="text-black text-uppercase" href="#">Damen</a>
+						</li>
+						<li>
+							<a class="text-black text-uppercase" href="#">Herren</a>
+						</li>
+						<li>
+							<a class="text-black text-uppercase" href="#">Kids</a>
+						</li>
+						<li>
+							<a class="text-black text-uppercase" href="#">Beauty</a>
+						</li>
+						<li>
+							<a class="text-black text-uppercase" href="#">Strore</a>
+						</li>
+						<li>
+							<a class="text-black text-uppercase" href="#">Live</a>
+						</li>
+					</ul>
+					<div id="animationRight" class="animation-right flex-item-right logo text-right">
+						<div class="icons">
+							<i class="fa fa-search"></i>
+							<i class="fa fa-user"></i>
+							<i class="fa fa-heart"></i>
+							<i class="fa fa-shopping-cart"></i>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="flex-container navbar min-header justify-content-center">
-				<div id="animationLeft" class="animation-left flex-item-left logo">
-					<img class="" src="images/logo.png" alt="logo here" class="img-responsive" />
-				</div>
-				<ul class="nav text-center flex-item-middle navbar-nav">
-					<li class="active">
-						<a class="text-black text-uppercase" href="#">Damen</a>
-					</li>
-					<li>
-						<a class="text-black text-uppercase" href="#">Herren</a>
-					</li>
-					<li>
-						<a class="text-black text-uppercase" href="#">Kids</a>
-					</li>
-					<li>
-						<a class="text-black text-uppercase" href="#">Beauty</a>
-					</li>
-					<li>
-						<a class="text-black text-uppercase" href="#">Strore</a>
-					</li>
-					<li>
-						<a class="text-black text-uppercase" href="#">Live</a>
-					</li>
-				</ul>
-				<div id="animationRight" class="animation-right flex-item-right logo text-right">
-					<div class="icons">
-						<i class="fa fa-search"></i>
-						<i class="fa fa-user"></i>
-						<i class="fa fa-heart"></i>
-						<i class="fa fa-shopping-cart"></i>
-					</div>
-				</div>
-			</div>
-		</div>
+		</nav>
 
 		<!-- Carousel -->
 		<div id="carousel" class="carousel slide" data-ride="carousel">

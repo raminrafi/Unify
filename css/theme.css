@@ -1011,6 +1011,17 @@ li a:active {
   }
 }
 
+.wrapper-nav {
+  position: absoulte;
+  top: 0;
+  right: 0;
+  height: 132px;
+}
+
+.container-fluid {
+  position: relative;
+}
+
 .fixed .navbar {
   display: none;
   background-color: var(--white) !important;
@@ -1060,7 +1071,6 @@ li a:active {
   /* animation: animatee 2s ease-in-out 5s 1; */
 }
 
-
 .fixed .navbar .animation-left,
 .fixed .navbar .animation-right {
   opacity: 1;
@@ -1088,7 +1098,7 @@ li a:active {
 .navbar+.navbar {
   padding: 0 !important;
   border-radius: none;
-  min-height: 30px;
+  height: 30px;
   margin-bottom: 0;
   border: none;
 }
