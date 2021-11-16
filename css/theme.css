@@ -1000,18 +1000,14 @@ li a:active {
 
 /* Conifgurations */
 
-/* .slide-down {
-  top: -80px;
-  transition: all .6s ease 1.2s;
-  animation: slide-down 1s ease 0.3s;
-} */
-
 @keyframes slide-down {
   from {
-    top:-30px;
+    /* top:-30px; */
+    margin-top: -81px;
   }
   to {
-    top: 0px;
+    /* top: 0px; */
+    margin-top: 0;
   }
 }
 
@@ -1028,12 +1024,11 @@ li a:active {
 
 .hiddenn {
   visibility: hidden !important;
-
 }
 
 .visiblee {
   visibility: visible !important;
-  animation: slide-down 1s ease-in;
+  animation: slide-down 0.8s ease-in
 }
 
 .animation-left,
