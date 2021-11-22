@@ -1,0 +1,58 @@
+header {
+	.navbar {
+		max-height: 57px;
+		color: rgba(255, 255, 255, 0.6);
+		ul {
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+	}
+}
+
+.navbar {
+	height: 95px;
+	&-main {
+		padding-top: 23px;
+		padding-bottom: 23px;
+		li {
+			a {
+				padding-left: 5px !important;
+				padding-right: 5px !important;
+			}
+		}
+	}
+	&-nav {
+		.nav-item {
+			margin: 0 40px;
+			a {
+				&:hover,&:active,&:focus {
+					background-color: $black !important;
+					color: $lightgray !important;
+					text-decoration: none !important;
+				}
+			}
+		}
+		li {
+			a {
+				&:hover,&:active,&:focus {
+					background-color: $white !important;
+					color: $turquoise !important;
+					text-decoration: none !important;
+				}
+			}
+		}
+	}
+}
+	
+.language {
+	&-icon {
+		margin-right: 8px;
+	}
+	&-divider {
+		padding: 0 10px;
+	}
+}
+
+.nav-icons {
+	margin-right: 12px;
+}

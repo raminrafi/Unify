@@ -1,0 +1,175 @@
+@media (max-width: 767px) {
+	.text-left {
+		text-align: center !important;
+	}
+	.card-image,
+	.dropdown-image {
+		margin:0 auto;
+		max-height: 150px;
+		max-width: 150px;
+	}
+}
+
+@media (max-width: 540px) {
+	.text-lg,
+	.text-xmd, 
+	.text-md,
+	body {
+		font-size: 13px !important;
+	}
+
+
+	.widget .language,
+	.widget .form-group .input-group {
+		max-width: 100%;
+	}
+	.fa-user {
+		margin-bottom: 0;
+	}
+	.text-xs,
+	.text-xsm {
+		font-size: 11px !important;
+	}
+	.bannner {
+		display: none !important;
+	}
+
+	.text-xl,
+	.text-xxl {
+		font-size: 24px !important;
+		letter-spacing: normal;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		margin: 0 !important;
+	}
+	
+	button {
+		width: 95%;
+	}
+
+	.navbar-header {
+		margin: 0 200px;
+	}
+
+	.dropdown-img{
+		max-height: 90px !important;
+		max-width: 90px !important;
+	}
+
+	.text-left {
+		text-align: center;
+	}
+
+	.media {
+		span {
+			padding: 0;
+			border-right:none;
+		}
+	}
+
+	.card-text span {
+		font-size: 24px !important;
+	}
+
+	.pull-right,
+	.pull-left {
+		float: none !important;
+	}
+
+	
+	.apply-input {
+		display: inlineblock !important;
+	}
+
+	.btn-transparent {
+		font-size: 10px !important;
+	}
+
+	.container .row {
+		text-align: center;
+	}
+
+	.navbar-nav .nav-item {
+		text-align: center;
+		padding: 5px 0;
+	}
+
+	.form-group {
+		margin-right: 0 !important;
+	}
+
+	.card-image {
+		width: 100%;
+	}
+
+	.dropdown-image {
+		margin:0 auto;
+		max-height: 150px;
+		max-width: 150px;
+	}
+
+	.py {
+		&-4, 
+		&-2 {
+			padding-top: 8px !important;
+			padding-bottom: 8px !important;
+		}
+	}
+	.px {
+
+		&-2,
+		&-3,
+		&-4 {
+			padding-left: $mp-1 !important;
+			padding-right: $mp-1 !important;
+		}
+	}
+
+	.mx {
+
+		&-2,
+		&-3,
+		&-4 {
+			margin-left: $mp-1 !important;
+			margin-right: $mp-1 !important;
+		}
+	}
+
+	.ml {
+
+		&-2,
+		&-3,
+		&-4 {
+			margin-left: $mp-1 !important;
+		}
+	}
+
+	.mr {
+
+		&-2,
+		&-3,
+		&-4 {
+			margin-right: $mp-1 !important;
+		}
+	}
+
+	.mt {
+		&-4 {
+			margin-top: $mp-2 !important;
+		}
+
+		&-2,
+		&-3 {
+			margin-top: $mp-1 !important;
+		}
+	}
+
+	.mb {
+
+		&-2,
+		&-3,
+		&-4 {
+			margin-bottom: $mp-1 !important;
+		}
+	}
+}
