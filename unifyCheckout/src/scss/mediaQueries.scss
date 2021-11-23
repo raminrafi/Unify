@@ -8,6 +8,12 @@
 		max-height: 150px;
 		max-width: 150px;
 	}
+	header .navbar {
+		max-height: none;
+	}
+	.navbar{
+		overflow: hidden !important;
+	}
 }
 
 @media (max-width: 540px) {
